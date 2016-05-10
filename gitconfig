@@ -10,11 +10,15 @@
 [user]
 	name = Bazin jerome
 	email = jerome.bazin@gmx.com
+[diff]
+	algorithm = histogram
 [alias]
 	st = status --short --branch
+	sb = show-branch
 	co = checkout
 	ci = commit
 	lg = log --graph --all --pretty=\"-%C(yellow) %h |%C(cyan) %d %s (%cr) [%an -%C(red)  %ce] \"
-	dp = diff --word-diff --unifie=10 --patience
-[diff]
-	algorithm = histogram
+	dword = diff --word-diff --unifie=10
+	dfiles = diff --stat
+	so = show --pretty='parent %C(red)%p%C(reset) commit %C(red)%h%C(reset) %C(yellow)%d%C(reset)%n%n%w(72,2,2) %s%n%n%w(72,0,0) %C(cyan)%an%C(reset) %C(green)%ar'
+
