@@ -1,0 +1,20 @@
+[core]
+	excludesfile = /Users/naksansa/.gitignore_global
+	pager = less -RFX
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Bazin jerome
+	email = jerome.bazin@gmx.com
+[alias]
+	st = status --short --branch
+	co = checkout
+	ci = commit
+	lg = log --graph --all --pretty=\"-%C(yellow) %h |%C(cyan) %d %s (%cr) [%an -%C(red)  %ce] \"
+	dp = diff --word-diff --unifie=10 --patience
+[diff]
+	algorithm = histogram
